@@ -1,0 +1,18 @@
+nesne yönelimli programlamanın 3 temel üysei olan class lar, abstract class lar ve interfacelerdir.İnterfaceler class kabul edilmiyor fakat 
+nomral class lar gibi ve abstract class lar gibi reference tutabiliyorlar.
+
+Class larda tüm metotların içinin dolu olması gerekiyor fakat 
+Abstract class larda mothodların kimisi dolu olabilir kimisi boş olabilir.
+Bir class birden fazla interface i implemente edebiliyor.
+
+
+public Interface ICustomerDal {
+       void add();
+}
+
+
+Interface lerde abstractlar gibi new lenemezler.Çünkü sadece reference tutuyor.
+Genellikle yazılım projelerinde katmanlar vardır.
+
+Bir yazılım projesinde 3 katman olduğunu varsayarsak: arayüz, iş katmanı(koşul katmanı) ve Data Access katmanı olarak.Bu katmanlar arasında geçiş yaparken 
+genellikle interfaceler kullanılır bunun sebebi ise bağımlılığı önlemektir.
