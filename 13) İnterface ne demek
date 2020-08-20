@@ -1,9 +1,9 @@
-nesne yönelimli programlamanın 3 temel üysei olan class lar, abstract class lar ve interfacelerdir.İnterfaceler class kabul edilmiyor fakat 
-nomral class lar gibi ve abstract class lar gibi reference tutabiliyorlar.
+nesne yönelimli programlamanın 3 temel üyesi olan "Class" lar, "Abstract Class" lar ve "Interface" lerdir.Interface ler class kabul edilmiyor fakat 
+"nomral class" lar gibi ve "abstract class" lar gibi "reference" tutabiliyorlar.
 
-Class larda tüm metotların içinin dolu olması gerekiyor fakat 
-Abstract class larda mothodların kimisi dolu olabilir kimisi boş olabilir.
-Bir class birden fazla interface i implemente edebiliyor.
+*Class larda tüm metotların içinin dolu olması gerekiyor fakat 
+*Abstract class larda mothodların kimisi dolu olabilir kimisi boş olabilir.
+*Bir class birden fazla interface i implemente edebiliyor.
 
 
 public Interface ICustomerDal {
