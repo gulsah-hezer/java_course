@@ -1,1 +1,39 @@
 
+Polymorphism OOP için gerçekten önemli bir kavram. Polymorphism işlerimizi çoğu zaman kolaylaştırıyor.
+Genel kavram olarak bir nesnenin birden fazla nesle gibi davranma şeklidir.
+
+ex:
+***class Hayvan şeklinde diğer classımızı yarattık ve isim özelliğini ekledik.
+Constructor ve getter setter metotlarımızı oluşturduk. 
+Son olarak konus() adında bir metot yazdık.
+
+***Şimdi Hayvan classından miras alan 3 tane class yazalım.
+Kedi classımız Hayvan classımızdan miras alacağı için extends yaptık.Constructorımızıda oluşturduk. Ek olarak konus() metodumuzu override ettik.Bunun için yine kısayol kullandık.
+
+****Ancak biz Hayvan classındaki metodu değilde kendi metodumuzu yazmak istiyoruz. Bu yüzden aşağıdaki gibi düzenliyoruz.
+Yine aynı şekilde constructorımızı oluşturduk ve metot override yaptık.
+
+***Şimdi artık polymorphismi görebiliriz.
+Normalde main classı içerisinde bu zamana kadar objeyi hep aşağıdaki gibi tanımlamıştık.
+
+pubic class Main {
+      public static void main (String[] args) {
+      
+      Hayvan hayvan=new Hayvan ("Richi");
+      System.out.println(hayvan.konus());
+      }
+   }
+   
+ ******************************************************************
+ Fakat şimdi hiç görmediğimiz bir tanımla şeklini göreceğiz.
+ Aşağıdaki gibi tanımladığımızda javanın hata vermediğini görüyoruz.
+ *******************************************************************
+                       POLYMORPHİSM
+ *******************************************************************
+ 
+ public class Main {
+        public static void main(String[] args){
+        Hayvan hayvan= new Kedi (" Mikedi");
+        System.out.println(hayvan.konus());
+        
+        
