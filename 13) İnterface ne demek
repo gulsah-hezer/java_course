@@ -17,10 +17,32 @@ Genellikle yazılım projelerinde katmanlar vardır.
 Bir yazılım projesinde 3 katman olduğunu varsayarsak: arayüz, iş katmanı(koşul katmanı) ve Data Access katmanı olarak.Bu katmanlar arasında geçiş yaparken 
 genellikle interfaceler kullanılır bunun sebebi ise bağımlılığı önlemektir.
 
+***************************
 
-ex:Ferrari bir arabadır ve arabanın sahip olduğu tüm özelliklere sahiptir.
 
-abstract class Araba
+Interface sınıfında sadece method tanımları bulunur. 
+İçlerine kod parçacığı yazılmaz.
+İçerisinde tanımlanan method tanımları bu interface’i implemente edecek diğer sınıflar tarafından implement edilmesi zorunludur.
+
+****************************
+
+Interfaceler başka bir interface den inherit olabilirler.
+Interface’ler genelde can-do ilişkisi vardır.
+
+Örnek vermek gerekirse;
+
++Ferrari can-do drive itself
+
+****************************
+
+ /// Bazı arabalar cabriolet olabilir hepsinin ortak bir özelliği değildir.
+    /// </summary>
+    interface ICabrioled
+    {
+        void TavanTipi();
+    }
+ 
+    abstract class Araba
     {
         public string Marka { get; set; }
         public int VitesSayisi { get; set; }
@@ -31,9 +53,9 @@ abstract class Araba
     }
  
     /// <summary>
-    /// Ferrari'yi Araba sınıfımızdan inherit alıyoruz.
+    /// Ferrari'yi Araba sınıfımızdan inherit alıyoruz ve yeniden şekillendiriyoruz. Ferrarimiz cabriolet ve ICabriolet özelliğini implemente ediyoruz.
     /// </summary>
-    class Ferrari : Araba
+    class Ferrari : Araba, ICabrioled
     {
         /// <summary>
         /// Maximum hız bilgimizi override ediyoruz ve Araba abstract sınıfımızın sahip olduğu tüm özelliklere sahip oluyor.
@@ -41,5 +63,13 @@ abstract class Araba
         public override void MaximumHiz()
         {
             Console.WriteLine("Ferrari'nin maximum hızı: 300");
+        }
+ 
+        /// <summary>
+        /// ICabrioled'i implemente ettiğimiz için TavanTipi methodumuzu tanımlıyoruz.
+        /// </summary>
+        public void TavanTipi()
+        {
+            Console.WriteLine("Metal tavan");
         }
     }
