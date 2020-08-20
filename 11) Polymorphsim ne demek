@@ -49,3 +49,50 @@ pubic class Main {
 2-) Geri kalan classlar alt sınıf olacak yani Hayvan classından miras alacaklar.
 
 ***********************************************************************
+
+Biz bir objeyi birden fazla obje gibi kullanabiliyoruz. 
+Ama bunun için mutlaka inheritance şeklinde bir yapınızın olması gerekiyor.
+
+
+public class Main {
+public static void main(String[] args){
+
+        Hayvan hayvan= new Kedi (" Mikedi");
+        Hayvan hayvan1= new Köpek ("Richi");
+        Hayvan hayvan2= new At (" Monyak");
+        
+        System.out.println(hayvan.konus());
+        System.out.println(hayvan1.konus());
+        System.out.println(hayvan2.konus());
+        
+****************************************************************************
+
+hayvan1 e biz kopeği atıyoruz. Ve yukarıdan başlıyor. konus() metodum var mı diye bakıyor. 
+Bana Kopek referansı atanmıştı. Kopeğin içinde bakıyor konus() metodu var mı?
+Varsa onu yoksa kendi metodunu çağırıyor.
+
+****************************************************************************
+Şimdi polymorphism in en önemli faydasına geldik.
+
+main classı içerisine konustur() şeklinde yeni bir fonksiyon yazıyoruz. 
+Ve bu fonksiyonumuz Hayvan tipinden bir referans alacak.
+
+EX:
+public class Main {
+       public static void konustur(Hayvan hayvan){
+       System.out.println(hayvan.konus());
+       }
+       public static void main(String[] args) {
+       konustur(new Kedi("Mikedi"));
+       konustur(new Köpek("Richi"));
+       konustur(new At("Monyak"));
+       
+       
+       
+
+
+
+
+
+
+
