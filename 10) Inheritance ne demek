@@ -1,1 +1,7 @@
 
+Inheritance miras anlamında kullanılıyor olup, bir class ın taki özellikleri değerleri diğer calss a aktarılması işlemidir.
+Bunun için employee class ı için person class ından miras alınabilir çünkü her kişi ilk olarak person class ında olmak durumundadır.
+Employee class ı ise daha alt küme olan bir classtır dolayısıyla inheritance özelliğini kullanarak işlemleri kolaylaştırabiliriz.
+Ortak methodları tekrar tekrar yazmamızı sağlar.
+
+
