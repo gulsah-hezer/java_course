@@ -24,12 +24,12 @@ pubic class Main {
       }
    }
    
- ******************************************************************
+ **********************************************************************
  Fakat şimdi hiç görmediğimiz bir tanımla şeklini göreceğiz.
  Aşağıdaki gibi tanımladığımızda javanın hata vermediğini görüyoruz.
- *******************************************************************
+ **********************************************************************
                        POLYMORPHİSM
- *******************************************************************
+ **********************************************************************
  
  public class Main {
         public static void main(String[] args){
@@ -37,3 +37,15 @@ pubic class Main {
         System.out.println(hayvan.konus());
         
         
+ İşte polymorphism bu aslında. 
+ Bir tane referans birden farklı obje gibi davranıyor. 
+ Yani bizim hayvan referansımız var ancak biz buna Kedi referansı atadık.
+ ***********************************************************************
+        
+ Polymorphism yapmak için şu şartların olması gerekir.
+
+1-) Ana classınız olacak. Bizim bu örnekteki ana classımız Hayvan classıydı.
+
+2-) Geri kalan classlar alt sınıf olacak yani Hayvan classından miras alacaklar.
+
+***********************************************************************
