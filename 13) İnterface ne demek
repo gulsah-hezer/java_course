@@ -73,3 +73,20 @@ Interface’ler genelde can-do ilişkisi vardır.
             Console.WriteLine("Metal tavan");
         }
     }
+*********************************
+
+Açıklamak gerekirse her aracımız cabriolet olamayacağı için bunu interface olarak tanımlamıştık.
+“Ferrari” gibi bir aracımızı varsaydık ve buna “ICabrioled” interface’imizi implemente ettik.
+Interface’ler içerisine kod parçacıkları yazılmaz, sadece method tanımları bulunur. 
+Bunuda gösterebilmek amaçlı sadece “TavanTipi” isminde bir tanımlama yaptık ve “Metal tavan” olarak belirttik.
+
+*******************************
+
+Interface sınıfının genel özelliklerini sıralayacak olursak;
+
+Kod içerisinde “new” anahtar sözcüğü ile oluşturulamazlar.
+Bir sınıf birden fazla interface implemente edebilir.
+Implemente edicek sınıflar arasında genelde “can-do” ilişkisi vardır.
+Interface içerisine sadece boş method’lar tanımlanabilir.
+
+
