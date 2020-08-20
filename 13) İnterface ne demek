@@ -16,3 +16,29 @@ Genellikle yazılım projelerinde katmanlar vardır.
 
 Bir yazılım projesinde 3 katman olduğunu varsayarsak: arayüz, iş katmanı(koşul katmanı) ve Data Access katmanı olarak.Bu katmanlar arasında geçiş yaparken 
 genellikle interfaceler kullanılır bunun sebebi ise bağımlılığı önlemektir.
+
+
+ex:
+abstract class Araba
+    {
+        public string Marka { get; set; }
+        public int VitesSayisi { get; set; }
+        // Kısacası arabaların sahip oldukları tüm ortak özellikler
+ 
+        public abstract void MaximumHiz();
+        // Override edilecek methodumuz çünkü her arabanın kendine özgü bir maximum hız bilgisi vardır
+    }
+ 
+    /// <summary>
+    /// Ferrari'yi Araba sınıfımızdan inherit alıyoruz.
+    /// </summary>
+    class Ferrari : Araba
+    {
+        /// <summary>
+        /// Maximum hız bilgimizi override ediyoruz ve Araba abstract sınıfımızın sahip olduğu tüm özelliklere sahip oluyor.
+        /// </summary>
+        public override void MaximumHiz()
+        {
+            Console.WriteLine("Ferrari'nin maximum hızı: 300");
+        }
+    }
