@@ -1,4 +1,7 @@
 
+
+FIELD VE ATTRIBUTE İLE ÇALIŞMAK
+
 -Class ların en önemli özelliklerinden biri özellikleri de yani attribute leri de içermesidir.Örneğin eğer biz ürün class 'ı oluşturursak aynı zamanda
 bu ürünün özelliklerini bu ürün class ı içerisine yerleştirebiliriz. 
 -Bunun için bir ürünün isimi var ıd si var, tanımı var fiyatı var gibi bu bilgileri ürüne ait tutmuş oluyoruz.Bunlar tabiki buradaki değişkenler.
@@ -14,6 +17,7 @@ ekleyip kullanabiliriz.
 
 ***********************************
 
+ENCAPSULATION İHTİYACINI ANLAMAK
 
 -Encapsülation kabsülleme denilen bir yöntemdir.
 -Aslında bu yöntemi bir yerde özellikleri tanımlamak ve diğer class da da bu classta oluşturmuş olduğumuz ürünün özelliklerini içerisine alarak
@@ -22,3 +26,16 @@ methodu kullanmasıdır.
 yazmamız gerekir.
 
 ************************************
+
+GETTER VE SETTER İLE ÇALIŞMAK
+
+GET(): YAZDIĞIMIZ ÖZELLİĞİ OKUYABİLMEMİZ İÇİN GEREKLİDİR.
+SET(): BU İSE VERİLDİĞİ ALANIN YANİ ÖZELLİĞİNİN DOLDURULMASI İÇİN KULLANILIR.
+
+***********************************
+
+Burada get ve set ifadeleri attribute içeren class lar için kullanışlıdır.
+bu bloklara getter ve setter blokları denir.
+Aynı işleri tüm özellikler için otamatik yazdırabiliriz. 
+Bu da refactor kullanarak ıd, name, description, renk herbir attribute için get ve set methodlarının oluşturulmasını sağlayabiliriz.
+
