@@ -18,7 +18,8 @@ Bir yazılım projesinde 3 katman olduğunu varsayarsak: arayüz, iş katmanı(k
 genellikle interfaceler kullanılır bunun sebebi ise bağımlılığı önlemektir.
 
 
-ex:
+ex:Ferrari bir arabadır ve arabanın sahip olduğu tüm özelliklere sahiptir.
+
 abstract class Araba
     {
         public string Marka { get; set; }
