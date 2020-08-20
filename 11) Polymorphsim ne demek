@@ -1,6 +1,6 @@
 
 Polymorphism OOP için gerçekten önemli bir kavram. Polymorphism işlerimizi çoğu zaman kolaylaştırıyor.
-Genel kavram olarak bir nesnenin birden fazla nesle gibi davranma şeklidir.
+Genel kavram olarak bir nesnenin birden fazla nesne gibi davranma şeklidir.
 
 ex:
 ***class Hayvan şeklinde diğer classımızı yarattık ve isim özelliğini ekledik.
@@ -87,6 +87,7 @@ public class Main {
        konustur(new Köpek("Richi"));
        konustur(new At("Monyak"));
        
+******************************************************************************
        
        
 
