@@ -1,1 +1,24 @@
+CONSTRUCTOR
+
+-Aslında her class ın default olarak kendi class isiminden bir method u vardır.
+-Constructor ları yapıcı method olarak tanımlıyoruz.Bu oluşturdğumuz class dan her nesne için nesnenin inşasının gerçekleştirlmesi için oluşturduğumuz 
+fonksiyonlardır.
+- Daha önce encapsülation da anlattığımız gibi get ve set fonksiyonları kullanmadan direk nesnenin oluşması için gerekli bir fonksiyonu oluşturabiliriz.
+
+-Constructor dışarıdan veri alabilir ancak geriye değer döndürmez. 
+-Bir sınıftan nesne oluşturduğumuz da yapılmasını istediğimiz işlemleri bu yordamlar yani constructor (yapıcılar) ile gerçekleştiririz. 
+-Constructors (yapıcılar) nesneleri oluşturmak için kullanılan new operatörü ile birlikte tetiklenirler.
+
+-Yapıcılar (constructors) sınıf ile aynı ismi taşırlar ve dışarıdan erişilebilecekleri için bu yordamın public olarak tanımlanması gerekmektedir.
+-Bazı durumlarda programcının sınıftan bir instance oluşturmasını engellemek amacı ile private olarak tanımlanabilir.
+
+YANİ DEĞER ALAN VE DEĞER DÖNMEYEN NESNEYİ OLUŞTURAN BİR FONKSİYON ÇEŞİDİDİR.
+
+*********************
+
+METHOD OVERLOADİNG 
+
+var olan bir class ta iki tane farklı parametreler içeren iki aynı fonksiyon çeşidini oluşturabiliriz. 
+
+
 
