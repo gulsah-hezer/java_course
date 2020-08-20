@@ -54,3 +54,13 @@ ve aklımızın bir köşesinde dursun bir class sadece bir abstract class’ı 
 
 ****************************
 
+Abstract sınıfın genel özelliklerini sıralayacak olursak;
+
+Kod içerisinde “new” anahtar sözcüğü ile oluşturulamazlar.
+Bir sınıf sadece bir abstract sınıfı inherit alabilir.
+Inherit alıcak sınıflar arasında genelde “is-a” ilişkisi vardır.
+Abstract sınıfda method ve değişkenler tanımlanabilir.
+
+*****************************
+
+
