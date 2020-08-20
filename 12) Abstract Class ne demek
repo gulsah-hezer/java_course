@@ -1,1 +1,56 @@
 
+Yazdığımız sınıflar arasında inheritance(kalıtım) uygularken kullanırız. 
+Alt sınıflar abstract sınıfı inherit alırlar.
+Abstract class içindeki implement edilmiş tüm method’lar diğer class’da da geçerlidir.
+
+Abstract classdan implement ettiğimiz bir class içerisinde, sadece abstract class içerisinde
+abstract olarak tanımlanmış method, property gibi vb.lerini implement etmek mecburidir.
+Diğer method’lar zaten tanımlıdır ve implement edilmesi mecburi değildir.
+
+Abstract sınıflar genelde is-a ilişkilerinde kullanılır.
+Örnek vermek gerekirse;
+
++Ferrari is-a Araba
+
+****************************
+
+Ferrari bir arabadır ve arabanın sahip olduğu tüm özelliklere sahiptir.
+
+abstract class Araba
+    {
+        public string Marka { get; set; }
+        public int VitesSayisi { get; set; }
+        // Kısacası arabaların sahip oldukları tüm ortak özellikler
+ 
+        public abstract void MaximumHiz();
+        // Override edilecek methodumuz çünkü her arabanın kendine özgü bir maximum hız bilgisi vardır
+    }
+ 
+    /// <summary>
+    /// Ferrari'yi Araba sınıfımızdan inherit alıyoruz.
+    /// </summary>
+    class Ferrari : Araba
+    {
+        /// <summary>
+        /// Maximum hız bilgimizi override ediyoruz ve Araba abstract sınıfımızın sahip olduğu tüm özelliklere sahip oluyor.
+        /// </summary>
+        public override void MaximumHiz()
+        {
+            Console.WriteLine("Ferrari'nin maximum hızı: 300");
+        }
+    }
+    
+******************************
+
+
+Örneğimizden de anlaşılacağı gibi araba örneğimizden yola çıkarak “Araba” isminde bir abstract sınıf oluşturuyoruz ve 
+“Ferrari” bu sınıfdan inherit alarak Arabaların sahip olmuş oldukları tüm ortak özelliklere sahip olmuş oluyor.
+
+*****************************
+
+NOT: virtual keyi ilede abstract sınıf içerisinde tanımlanmış bir method, 
+alt sınıflar tarafından override (ezilebilir) edilebilir hale getirebilmek mümkündür 
+ve aklımızın bir köşesinde dursun bir class sadece bir abstract class’ı implemente edebilir.
+
+****************************
+
